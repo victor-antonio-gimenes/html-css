@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de getElementById</h1>
+    <p id="mensagem">Este texto será alterado!</p>
+    <button onclick="alterarTexto()">Clique aqui</button>
+
+    <script>
+        function alterarTexto() {
+            // Obtém o elemento com o ID "mensagem"
+            var elemento = document.getElementById("mensagem");
+
+            // Altera o conteúdo do elemento
+            elemento.textContent = "O texto foi alterado com sucesso!";
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias</title>
+</head>
+<body>
+    <h1>Midias em geral</h1>
+    <h2>Imagens Dinâmicas</h2>
+    <p>As imagens Dinâmicas servem para otimizar os dispositivos eleronicos (pc,tablet,celular) com uma imagem que não cause um overflow de memória em seu site, adaptando a imagem ao tamanho da tela de cada dispositivo</p>
+   
+    <picture>
+        <source media="(max-width: 800px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1000px)" srcset="imagens/foto-m.png" type="image/png">
+        
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <h2>Reproduzindo Áudios</h2>
+    <p>utilizando apenas a tag "áudio" não ira iniciar o audio, ou seja ele apenas vai ser mencionado apenas, adicionando um "control" irá ser adicionado um controle ou hud de controle desse audio e "autoplay" que ao carregar o audio, ele inicia o som. A tag "source" serve como uma função que ajuda na compatibilidade de seu site com varios formatos ou tamanhos diferentes de cada dispositivo igual a função"if"</p>
+    <audio preload="metadata" autoplay controls>
+<source src="midia/Melhores Perólas das Animações por 8 minutos e 22 segundos prt.17.mp3" type="audio/mpeg">
+    </audio>
+    <h2>Reproduzindo Videos</h2>
+    <p>utilizando a tag "video" é possivel indicar o video que vai ser Reproduzido em seu site, uma dica é utilizar o site "handbreak" para compactar esse video para uma menor utilização de memória. A tambem como converter arquivos de videos mp4 para um formato ogv que é bem mais leve, porem certos formatos não sao compativeis com certos navegadores.
+
+    </p>
+    <video  controls src="midia/comida.mp4" style="width: 450px;"type="video/mp4" ></video>
+    <h2>Problema de volume</h2>
+    <p>Uma forma de resolver de alto volume de memoria consumida de sua hospedagem é utilizando hospedagem de video de outros sites, como links do youtube, twiter etc.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/grgnEe7LtCY?si=MCuh4pGya7qJkf9F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
